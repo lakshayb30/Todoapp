@@ -13,20 +13,32 @@ body {
     margin-top: 10vh;
 }
 
+#div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
 #todos{
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-top: 10vh;
-    margin-left: 20vw;
+    margin: 5%;
     font-size: x-large;
-    margin-right: 20vw;
-    
+    background-color: bisque;
+    border-radius: 1vw;
+    padding: 2%;
+    border: 2px solid #00000090;
 }
 
+
+
 #desc{
-    width: 30vw;
+    width: 100%;
+    margin: 5%;
     height: 5vh;
     border-radius: 15px;
     border: 2px solid #00000090;
@@ -39,7 +51,7 @@ body {
     border: 2px solid #0000004e;
     background-color: #ff7e5f;
     color: white;
-    margin-left: 5vw;
+    margin: 5%;
     
 }
 
