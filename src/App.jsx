@@ -56,16 +56,24 @@ export default function App() {
         <div style={{display:'flex', alignItems:'center',marginBottom:'2vh'}}>
           <input style={{marginRight:'2vw', width:'2vh', height:'2vh'}} type="checkbox" value={props.done}/>
           <span style={{fontSize:18}}>{props.description}</span>
-          <img onClick={() => deleteTODO(props.index)} style={{marginLeft:'2vw',height:24}} src="./delete.png"/>
-          <img onClick={() => editTODO(props.index)} style={{marginLeft:'2vw',height:24}} src="./edit.png" />
+          <div style={{display:'flex',justifyContent:'flex-end'}}>
+            <img onClick={() => deleteTODO(props.index)} style={{marginLeft:'2vw',height:24}} src="./delete.png"/>
+            <img onClick={() => editTODO(props.index)} style={{marginLeft:'2vw',height:24}} src="./edit.png" />
+          </div>
+          
         </div>
     )
   }
   return (
     <div className='whole'>
+      <div style={{fontSize:50,display:'flex',justifyContent:'center',marginTop:50}}>
+        <b>
+        TODOAPP
+        </b>
+      </div>
       <div id='form'>
-        <input id = 'desc' placeholder='What TODO ?'></input>
-        <button id = 'add' onClick={addtodos}>Add</button>
+        <input id = 'desc' placeholder='What TODO ?' style={{fontSize:18}}/>
+        <button id = 'add' onClick={addtodos} style={{fontSize:18}}>Add</button>
       </div>
       {todos.length > 0 && (
         <div id="todos">
