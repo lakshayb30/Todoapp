@@ -13,25 +13,18 @@ body {
     margin-top: 10vh;
 }
 
-#div1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    float: right;
-}
-
 #todos{
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
     margin: 5%;
     font-size: x-large;
     background-color: bisque;
-    border-radius: 1vw;
-    padding: 2%;
+    border-radius:20px;
+    padding: 2.5%;
     border: 2px solid #00000090;
+    width: auto;
+    height: auto;
 }
 
 
